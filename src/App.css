@@ -1,0 +1,87 @@
+
+.App-header{
+  padding: 20px;
+  background-color: var(--light-primary);
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.App-banner{
+  display: flex;
+  justify-content: center;
+}
+.App-banner .hero-img{
+  margin-top: 40px;
+}
+.App-body{
+  padding: 10px 40px;
+}
+.App-sell{
+  margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.App-sell-item{
+  flex: 0 0 auto;
+  width: 25%;  
+}
+.App-sell-item .App-item-link{
+  text-decoration: none;
+  color: #000;
+}
+.App-sell-item-img{
+  height: 300px;
+  width: 250px;
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.App-sell-item-img-badge{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.App-item-link:hover .item-img {
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+}
+.App-sell-item-img .item-img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.App-sell-item-dec .rating{
+  display: flex;
+  align-items: center;
+}
+.App-sell-item-dec .rattings{
+  width: 20px;
+  height: 20px;
+  background: url(./img/star1.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App-sell-item-dec .rattings-given{
+  width: 0px;
+  height: 20px;
+  background: url(./img/star.png);
+  background-size: 20px 90%;
+  background-repeat: no-repeat;
+}
+.App-sell-item-dec .price{
+  font-size: 14px;
+}
+
+
+@media screen and (max-width:992px) {
+  .App-sell-item{
+    width: 50% !important;
+  }
+}
+@media screen and (max-width:600px) {
+ 
+  .App-sell-item{
+    width: 100% !important;
+  }
+}
